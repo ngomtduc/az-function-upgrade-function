@@ -25,7 +25,7 @@ namespace UpgradeFunction
             dynamic data = JsonConvert.DeserializeObject(requestBody);
             name = name ?? data?.name;
 
-            string responseMessage = "Hello. This function runs on netcoreapp2.1.";
+            string responseMessage = "Hello. This function runs on net6.0.";
 
             return new OkObjectResult(responseMessage);
         }
